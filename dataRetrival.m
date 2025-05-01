@@ -1,4 +1,4 @@
-%% Collecting data from organoid-nuclei objects %%
+%% Collecting data from organoid-nuclei objects 
 
 
 % Create output folders
