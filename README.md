@@ -6,17 +6,21 @@ This project aims to develop and refine computational methods to accurately quan
 ## Key Findings
 
 ## Getting Started
-# Clone the project
- git clone https://github.com/Preshmod/NeuroOganoidProject.git 
+
+### Clone the project
+```bash
+ git clone https://github.com/Preshmod/NeuroOganoidProject/tree/mainAnalysis
+```
  
-# Running the Pipeline
+### Running the Pipeline
 The main script to execute the entire pipeline is mainAnalysis.m. Ensure that your directory structure and input files are organised as follows within the cloned GitHub folder named NeuroOrganoidProject:
 
-Input Files and Directory Structure
-Image Analysis/: Contains all organoid images to be analysed.
-Organoid_masks/: Contains the corresponding organoid masks for the organoid images.
-Nuclei_masks/: Contains the corresponding masks for nuclei within the organoids.
+### Input Files and Directory Structure
+- **`Image Analysis/`**: Contains all organoid images to be analysed.
+- **`Organoid_masks/`**: Contains the corresponding organoid masks for the organoid images.
+- **`Nuclei_masks/`**: Contains the corresponding masks for nuclei within the organoids.
 
+### Output Files and Directory Structure
 Upon running the pipeline, the following directories and files will be generated:
 
-## Train Your Own Model
+## Training Your Own Model
