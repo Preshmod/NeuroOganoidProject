@@ -1,9 +1,5 @@
 %% Collecting data from organoid-nuclei objects %%
 
-%Load images (cleaned isolated ones but mean intensity needs to be the
-%original images not the masks but images with the stains)
-
-% === REGIONPROPS ADVANCED SCRIPT, SEPARATING MEAN INTENSITY ===
 
 % Create output folders
 if ~exist('Regionprops_results', 'dir')
