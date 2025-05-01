@@ -6,10 +6,10 @@ This project aims to develop and refine computational methods to accurately quan
 ## Key Findings
 
 ## Getting Started
-Clone the project
- git clone https://github.com/Preshmod/NeuroOganoidProject/tree/mainAnalysis
+# Clone the project
+ git clone https://github.com/Preshmod/NeuroOganoidProject.git 
  
-Running the Pipeline
+# Running the Pipeline
 The main script to execute the entire pipeline is mainAnalysis.m. Ensure that your directory structure and input files are organised as follows within the cloned GitHub folder named NeuroOrganoidProject:
 
 Input Files and Directory Structure
