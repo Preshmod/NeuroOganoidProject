@@ -34,28 +34,3 @@ function CleanM = removeBorder(mask)
 end
 
     
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- % Label nuclei if needed
-    %if islogical(nucleiMask)
-        %nucleiMask = bwlabel(nucleiMask);
-
-% Initialise an empty array to store the number of nuclei within each organoid
-number_of_nuclei = [];
-
-% Extract the number of organoids
-number_of_organoids = max(relabeled_organoid_mask(:));
-
-for i = 1:number_of_organoids
-    % Create a mask for organoid i
-    current_organoid = relabeled_organoid_mask == i;
-
-    % Find overlapping nuclei
-    overlapping_nuclei = unique(nuclei_mask(current_organoid));
-    overlapping_nuclei(overlapping_nuclei == 0) = [];  % Remove background
-
-    % Store how many
-    number_of_nuclei(i) = numel(overlapping_nuclei);
-end
-    newLabel = 1;  % counter for assigning new nuclei labels
-
-
