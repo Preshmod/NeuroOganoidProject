@@ -48,12 +48,6 @@ end
 
 
 
-% Display before/after side-by-side
-%figure;
-%subplot(2,2,1); imshow(imadjust(Omask)); title('Original Organoid');
-%subplot(2,2,2); imshow(imadjust(CleanOM)); title('Cleaned Organoid');
-%subplot(2,2,3); imshow(imadjust(Nmask)); title('Original Nuclei');
-%subplot(2,2,4); imshow(imadjust(CleanNM)); title('Cleaned Nuclei');
 
 
 
