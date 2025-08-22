@@ -1,6 +1,6 @@
 # NeuroOganoidProject
 
-### Overview
+# Overview
 This project focuses on the development and evaluation of machine learning models to classify nuclei in brain organoid images into three biologically relevant categories: dividing, interphase, and miscellaneous. Using morphological features extracted from DAPI-stained images, four classification models—Random Forest, Logistic Regression, k-Nearest Neighbours (KNN), and Convolutional Neural Network (CNN)—were trained and compared in terms of accuracy, precision, recall, and F1-score.
 
 The motivation for this study stems from the need to better characterise mitotic activity within organoids, as abnormal cell proliferation is often implicated in the early development of neurodevelopmental disorders. By focusing on early-stage brain development, the project aims to contribute to the understanding of cellular organisation and mitotic regulation in organoid models, with potential implications for disease diagnosis and drug discovery.
