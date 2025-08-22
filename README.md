@@ -19,7 +19,7 @@ The main script to execute the entire pipeline is mainAnalysis.m. Ensure that yo
 
 
 ### Input Files and Directory Structure
-- **`Image Analysis/`**: Contains all raw organoid and nuclei images to be analysed.
+- **`Image Analysis/`**: Contains all organoid and nuclei images to be analysed (both raw images and masks).
 - **`Organoid_masks/`**: Contains the corresponding organoid masks for the organoid images.
 - **`Nuclei_masks/`**: Contains the corresponding masks for nuclei within the organoids.
 - **`trainedRandomForestModel.mat`**: The pre-trained model used to classify mitotic nuclei, interphase, and miscellaneous.
@@ -39,7 +39,7 @@ The analysis follows a step-by-step coding pipeline:
 - Ensures correct mapping between raw images and their corresponding segmentation masks.
 
 ### 3. dataCombining
-- Merges extracted features (e.g., actin intensity, nuclear size) into a unified dataset.
+- Merges extracted features (e.g., intensity, nuclear area, solidity etc) into a unified dataset.
 - Saves results in /Regionprops_results/.
 
 ### 4. nucleiClasses
@@ -48,7 +48,7 @@ The analysis follows a step-by-step coding pipeline:
 
 ### 5. Training models
 - Uses the processed dataset to train classification models (e.g., Logistic Regression, Random Forest, KNN, CNN).
-- Outputs evaluation metrics (accuracy, precision, recall, F1-score) and visualisations (confusion matrices, ROC curves).
+- Outputs evaluation metrics (accuracy, precision, recall, F1-score) and visualisations (confusion matrix, ROC curves).
 
 ### Output Files and Directory Structure
 - **`Regionprops_results`**: Morphological feature sets extracted from masks (e.g., area, eccentricity, mean intensity).
