@@ -4,7 +4,7 @@
 ### Overview
 This project focuses on the development and evaluation of machine learning models to classify nuclei in brain organoid images into three biologically relevant categories: dividing, interphase, and miscellaneous. Using morphological features extracted from DAPI-stained images, four classification models—Random Forest, Logistic Regression, k-Nearest Neighbours (KNN), and Convolutional Neural Network (CNN)—were trained and compared in terms of accuracy, precision, recall, and F1-score.
 
-The motivation for this study stems from the need to better characterise mitotic activity within organoids, as abnormal cell proliferation is often implicated in the early development of neurodevelopmental disorders. By focusing on early-stage brain development, the project aims to contribute to the understanding of cellular organisation and mitotic regulation in organoid models, with potential implications for disease diagnosis and drug discovery.
+The motivation for this study stems from the need to characterise mitotic activity better within organoids, as abnormal cell proliferation is often implicated in the early development of neurodevelopmental disorders. By focusing on early-stage brain development, the project aims to contribute to the understanding of cellular organisation and mitotic regulation in organoid models, with potential implications for disease diagnosis and drug discovery.
 This work further addresses key methodological challenges, such as feature selection, dataset imbalance, and model interpretability. Through a robust and reproducible pipeline, the project demonstrates how integrating classical machine learning with deep learning techniques can enhance the scalability and biological relevance of image-based analyses in organoid research.
 
 
@@ -22,10 +22,10 @@ The main script to execute the entire pipeline is mainAnalysis.m. Ensure that yo
 - **`Image Analysis/`**: Contains all raw organoid and nuclei images to be analysed.
 - **`Organoid_masks/`**: Contains the corresponding organoid masks for the organoid images.
 - **`Nuclei_masks/`**: Contains the corresponding masks for nuclei within the organoids.
-- **`trainedRandomForestModel.mat`**: The pre-trained model used to classify mitotic nuclei, non-mitotic nuclei, and artefacts.
-- **`trainedKNNModel.mat`**: The pre-trained model used to classify mitotic nuclei, non-mitotic nuclei, and artefacts.
-- **`trainedLogisticRegressionModel.mat`**: The pre-trained model used to classify mitotic nuclei, non-mitotic nuclei, and artefacts.
-- **`trainedNetwork.mat`**: The pre-trained model used to classify mitotic nuclei, non-mitotic nuclei, and artefacts.
+- **`trainedRandomForestModel.mat`**: The pre-trained model used to classify mitotic nuclei, interphase, and miscellaneous.
+- **`trainedKNNModel.mat`**: The pre-trained model used to classify mitotic nuclei, interphase, and miscellaneous.
+- **`trainedLogisticRegressionModel.mat`**: The pre-trained model used to classify mitotic nuclei, interphase, and miscellaneous.
+- **`trainedNetwork.mat`**: The pre-trained model used to classify mitotic nuclei, interphase, and miscellaneous.
 
 
 ## Pipeline Workflow
